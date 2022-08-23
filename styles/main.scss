@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin formatacao() {
+    height: 15vh;
+
+    display: flex;
+    align-items: center;
+}
+
+@import '_header';

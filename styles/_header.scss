@@ -1,0 +1,41 @@
+header {
+    height: 15vh;
+    background-color: #fff;
+
+    nav, ul {
+        @include formatacao();
+        max-width: 1366px;
+        width: 90%;
+        margin: auto;
+
+        ul {
+            justify-content: center;
+            gap: 20px;
+
+            list-style-type: none;
+
+            li a {
+                text-decoration: none;
+                font-weight: 700;
+                color: #000;
+            }
+
+            li {
+                @include formatacao();
+                
+                padding: 0 15px;
+
+                transition: all 1s;
+
+                cursor: pointer;
+            }
+
+            li:hover {
+                a {
+                    color: white;
+                }
+                background-color: #F20000;
+            }
+        }
+    }
+}
