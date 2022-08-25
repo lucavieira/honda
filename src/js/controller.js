@@ -5,7 +5,7 @@ let changeBlue = document.getElementById('change-blue')
 let current_image = document.getElementById('moto')
 
 function modifyImage(color) {
-    current_image.src = `../src/images/cb_twister_${color.toLowerCase()}.png`
+    current_image.src = `./src/images/cb_twister_${color.toLowerCase()}.png`
 
     if(color == 'Red') {
         changeRed.style.backgroundColor = '#C60000'
