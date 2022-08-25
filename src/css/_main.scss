@@ -47,6 +47,36 @@ main {
             font-weight: 300;
         }
     }
+
+    .changeImage {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+
+        .menuChange {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .losango {
+            width: 10px;
+            height: 10px;
+    
+            transform: rotate(45deg);
+    
+            background-color: #fff;
+
+            cursor: pointer;
+        }
+    
+        .linha {
+            width: 1px;
+            height: 40px;
+
+            background-color: #C60000;
+        }
+    }
 }
 
 @media (max-width: 500px) {
