@@ -1,0 +1,58 @@
+main {
+    height: 100vh;
+    background-color: #1E1E1E;
+
+    display: flex;
+    justify-content: center;
+
+    .container {
+        max-width: 1300px;
+        width: 90%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .background {
+        @include width-image();
+    }
+
+    .moto-demo {
+        position: absolute;
+        top: 25%;
+
+        @include width-image();
+    }
+
+    .especificacoes {
+        max-width: 1300px;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+
+        position: absolute;
+        bottom: -10%;
+
+        color: #fff;
+        font-weight: 800;
+
+        ul li {
+            font-weight: 300;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .especificacoes {
+        flex-direction: column;
+        margin-left: 10%;
+        top: 60%;
+    }
+}

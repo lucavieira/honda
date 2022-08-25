@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  height: 15vh;
+  background-color: #fff;
+  border-bottom: 2px solid #D9D9D9;
+}
+header nav, header ul {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  max-width: 1366px;
+  width: 90%;
+  margin: auto;
+}
+header nav ul, header ul ul {
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+}
+header nav ul li a, header ul ul li a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+}
+header nav ul li, header ul ul li {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  transition: all 1s;
+  cursor: pointer;
+}
+header nav ul li:hover, header ul ul li:hover {
+  background-color: #F20000;
+}
+header nav ul li:hover a, header ul ul li:hover a {
+  color: white;
+}
+
+main {
+  height: 100vh;
+  background-color: #1E1E1E;
+  display: flex;
+  justify-content: center;
+}
+main .container {
+  max-width: 1300px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .container-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .background {
+  max-width: 850px;
+  width: 90%;
+}
+main .moto-demo {
+  position: absolute;
+  top: 25%;
+  max-width: 850px;
+  width: 90%;
+}
+main .especificacoes {
+  max-width: 1300px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -10%;
+  color: #fff;
+  font-weight: 800;
+}
+main .especificacoes ul li {
+  font-weight: 300;
+}
+
+@media (max-width: 500px) {
+  .especificacoes {
+    flex-direction: column;
+    margin-left: 10%;
+    top: 60%;
+  }
+}/*# sourceMappingURL=index.css.map */

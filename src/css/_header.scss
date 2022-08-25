@@ -1,6 +1,7 @@
 header {
     height: 15vh;
     background-color: #fff;
+    border-bottom: 2px solid #D9D9D9;
 
     nav, ul {
         @include formatacao();

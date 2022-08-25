@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Inter', sans-serif;
+}
+
+@mixin formatacao() {
+    height: 15vh;
+
+    display: flex;
+    align-items: center;
+}
+
+@mixin width-image() {
+    max-width: 850px;
+    width: 90%;
+}
+
+@import '_header';
+@import '_main';
